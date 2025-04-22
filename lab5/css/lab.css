@@ -2,48 +2,109 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
-
-.kitty {
-  width: 600px;
-
-}
 body {
-font-family: 'Segoe UI', sans-serif;
-background-color: #fdfd96;
-color: #333;
-line-height: 1.6;
-margin: 0;
-padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfd96; /* light yellow */
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 30px;
 }
 
-/* Main Section Style */
-section {
-margin-bottom: 40px;
+/* Main Content Wrapper */
+main#content {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Titles */
+/* Main Heading */
 h1 {
-font-size: 2.5em;
-text-align: center;
-color: #d35400;
-margin-bottom: 30px;
+  font-size: 2.8em;
+  text-align: center;
+  color: #d35400; /* rich orange */
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-/* Minor Sections */
-.minor-section, .section {
-background-color: #ffffff;
-border-radius: 16px;
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-padding: 30px;
-margin: 20px auto;
-max-width: 800px;
+/* Minor Sections Styling */
+.minor-section {
+  background-color: #ffffff; /* white background */
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Section Title for each Minor Section */
-h2, .section-title {
-font-size: 1.8em;
-text-align: center;
-color: #d35400;
-border-bottom: 2px solid #f5d9b3;
-padding-bottom: 10px;
-margin-bottom: 2
+.minor-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Subtitles */
+h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #d35400; /* orange */
+  border-bottom: 2px solid #f5d9b3; /* peachy border */
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+/* Paragraph Text */
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #555;
+}
+
+/* Kitty Image */
+img.kitty {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img.kitty:hover {
+  transform: scale(1.05);
+}
+
+/* Script Output Box */
+#output {
+  margin-top: 1rem;
+  padding: 20px;
+  background-color: #fef9e7; /* pale yellow */
+  border: 2px dashed #f5c26b; /* soft orange */
+  border-radius: 10px;
+  font-family: monospace;
+  color: #a64b00; /* dark orange */
+  font-size: 1.1em;
+  white-space: pre-wrap;
+}
+
+/* Output Section Styling */
+.Output {
+  margin-top: 1rem;
+  padding: 20px;
+  background-color: #fef9e7; /* light yellow */
+  border: 2px dashed #f5c26b; /* peachy dashed border */
+  border-radius: 10px;
+  font-family: monospace;
+  color: #a64b00; /* dark orange */
+  font-size: 1.1em;
+  white-space: pre-wrap;
+}
