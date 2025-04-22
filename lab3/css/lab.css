@@ -2,14 +2,74 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
-.filestructure { 
-  width: 400px;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfd96; /* light yellow */
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 30px;
 }
 
-.art101filestructure {
-  width: 200px;
-  height: 600px;
+/* Main Content Wrapper */
+main#content {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
-.HelloWorld {
-  width: 300px;
+
+/* Main Heading */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #d35400; /* rich orange */
+  margin-bottom: 20px;
+}
+
+/* Minor Sections */
+.minor-section {
+  background-color: #ffffff; /* white background */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Subtitles */
+h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+/* Paragraph Text */
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: justify;
+}
+
+/* File Structure Image */
+img.filestructure {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Script Output Box */
+#output {
+  padding: 10px;
+  background-color: #fef9e7;
+  border: 1px dashed #f5c26b;
+  font-family: monospace;
+  color: #a64b00;
+  font-size: 1em;
 }
