@@ -3,7 +3,7 @@
 // Date: 4/28/25
 
 // Define Variabes
-myTransport = ["Hyundai Accent SE","rollerskates"];
+myTransport = ["Hyundai Accent SE", "rollerskates"];
 
 // Create an object for my main ride
 myMainRide = {
