@@ -31,6 +31,11 @@ console.log("Named Function (squares):", mapResults);
 console.log("Anonymous Function (add 10):", addTenResults);
 //
 
+// Use map
+var doubled = numbers.map(double);
+
+// Final result
+console.log("Doubled array:", doubled);
 
 
 
