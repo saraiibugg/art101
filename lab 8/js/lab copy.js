@@ -18,10 +18,9 @@ function squareNumber(x) {
 }
 
 // Use map with the named function
-var mapResults = array.map(squareNumber);
+var Results = array.map(squareNumber);
 
 // Use map with an anonymous function to add 10
-var squaredResults = numbers.map(squareNumber);
 console.log("Squared Results: ", squaredResults);
 
 var addTenResults = array.map(function(x) {
