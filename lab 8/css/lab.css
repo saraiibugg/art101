@@ -68,4 +68,10 @@ p {
   color: #555;
 }
 
+/* Output Container (optional extra style) */
+#output {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2c3e50;
+}
 
