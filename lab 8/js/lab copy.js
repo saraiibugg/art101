@@ -12,39 +12,30 @@
 var array = [1, 2, 3, 4, 5];
 
 // Named function that squares a number
-function yourFunctionName(x) {
+function squareNumber(x) {
     var results = x * x;
     return results;
 }
 
 // Use map with the named function
-var mapResults = array.map(yourFunctionName);
+var mapResults = array.map(squareNumber);
 
 // Use map with an anonymous function to add 10
+var squaredResults = numbers.map(squareNumber);
+console.log("Squared Results: ", squaredResults);
+
 var addTenResults = array.map(function(x) {
     var results = x + 10;
     return results;
 });
 
-// Log to console
+// test function
+console.log("What's 2 squared?", squareNumber(2));
+console.log("What's 5 squared?", squareNumber (5));
+console.log("Add Ten Results: ", addTenResults);
 console.log("Named Function (squares):", mapResults);
 console.log("Anonymous Function (add 10):", addTenResults);
-//
-
-// Use map
-var doubled = numbers.map(double);
-
-// Final result
 console.log("Doubled array:", doubled);
-
-
-var outputEl = document.getElementById("output");
-outputEl.innerHTML += "<p>Original array: [" + array + "]</p>";
-outputEl.innerHTML += "<p>Named Function (squares): [" + mapResults + "]</p>";
-outputEl.innerHTML += "<p>Anonymous Function (add 10): [" + addTenResults + "]</p>";
-outputEl.innerHTML += "<p>Doubled array: [" + doubled + "]</p>";
-
-
 
 
         
