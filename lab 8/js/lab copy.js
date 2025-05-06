@@ -38,6 +38,13 @@ var doubled = numbers.map(double);
 console.log("Doubled array:", doubled);
 
 
+var outputEl = document.getElementById("output");
+outputEl.innerHTML += "<p>Original array: [" + array + "]</p>";
+outputEl.innerHTML += "<p>Named Function (squares): [" + mapResults + "]</p>";
+outputEl.innerHTML += "<p>Anonymous Function (add 10): [" + addTenResults + "]</p>";
+outputEl.innerHTML += "<p>Doubled array: [" + doubled + "]</p>";
+
+
 
 
         
