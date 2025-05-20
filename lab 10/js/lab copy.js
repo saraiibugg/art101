@@ -1,30 +1,36 @@
 // index.js - JavaScript and the web
 // Author: Saraí Muñoz
 // Date: 5/15/25
-$(document).ready(function () {
-  let side = "left";
 
-  function generateRandomText() {
-    const messages = [
-      "Hey there!",
-      "This lab is kinda fun.",
-      "DOM manipulation makes the page feel alive.",
-      "Are we almost done?",
-      "I hope it works now.",
-      "Yesss, it finally shows in the right spot!"
-    ];
-    return messages[Math.floor(Math.random() * messages.length)];
-  }
 
-  $("#make-convo").click(function () {
-    const newText = generateRandomText();
-    const sideClass = side === "left" ? "left-bubble" : "right-bubble";
-    side = side === "left" ? "right" : "left";
 
-    $("#output").append(`<div class="bubble ${sideClass}">${newText}</div>`);
-  });
+// generate a short fake sentence
+function generateRandomText() {
+  const phrases = [
+    "Hey there!",
+    "How’s it going?",
+    "I'm just writing some JavaScript.",
+    "DOM manipulation is fun!",
+    "This lab is kinda cool.",
+    "Check out this bubble.",
+    "Let's keep clicking!"
+  ];
+  const randIndex = Math.floor(Math.random() * phrases.length);
+  return phrases[randIndex];
+}
+
+// click listener for button
+$("#make-convo").click(function() {
+  // get new fake dialogue
+  const newText = generateRandomText();
+
+  // alternate sides
+  const sideClass = ($("#output .bubble.left").length <= $("#output .bubble.right").length) ? "left" : "right";
+
+  // append a new bubble to our output div
+  $("#output").append('<div class="bubble ' + sideClass + '"><p>' + newText + '</p></div>');
 });
-$("#Results #output").append(`<div class="bubble ${sideClass}">${newText}</div>`);
+
 
 
 

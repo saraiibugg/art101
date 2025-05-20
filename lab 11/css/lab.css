@@ -1,0 +1,131 @@
+main#content {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 40px;
+  background: #fffefa;
+  border: 4px double #f6b26b;
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  font-size: 2.7em;
+  color: #e67e22;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #f5c396;
+  padding-bottom: 12px;
+  text-shadow: 1px 1px 2px #ffe5d0;
+}
+
+/* Subheadings */
+h2 {
+  font-size: 1.6em;
+  color: #c75100;
+  border-left: 6px solid #f7b87a;
+  padding-left: 12px;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Section styling */
+.minor-section {
+  background: #fff3e9;
+  border: 2px solid #f7c59f;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 10px rgba(250, 198, 149, 0.2);
+}
+
+/* Output container */
+.output {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9fc;
+  border: 3px dashed #add8e6;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(173, 216, 230, 0.3);
+}
+
+/* Chat bubble container */
+#output {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/* Bubble styles */
+.bubble {
+  max-width: 70%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  font-size: 1em;
+  line-height: 1.5;
+  word-break: break-word;
+  animation: fadeIn 0.6s ease-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid #ddd;
+}
+
+.bubble.left {
+  align-self: flex-start;
+  background-color: #d6f0ff;
+  border-color: #8ecae6;
+  border-top-left-radius: 0;
+}
+
+.bubble.right {
+  align-self: flex-end;
+  background-color: #ffe3dc;
+  border-color: #ffb4a2;
+  border-top-right-radius: 0;
+}
+
+/* Button */
+button#submit {
+  background-color: #f6b26b;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#submit:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+/* Input styling */
+input#user-name {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
