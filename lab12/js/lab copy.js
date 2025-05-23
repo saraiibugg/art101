@@ -31,7 +31,7 @@ const characterArray = [
   {
     name: "Marceline the Vampire Queen",
     description: "You're cool, complex, and march to the beat of your own bass guitar.",
-    image: "https://static.wikia.nocookie.net/atfanfic/images/9/92/Daddy_s_little_monster_by_sircinnamon-d8to537.png/revision/latest/scale-to-width-down/250?cb=20151017001731ps://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/8/8e/Marceline.png"
+    image: "https://preview.redd.it/is-it-me-or-does-marceline-look-different-as-the-series-v0-wmaum5d3uh3b1.jpg?width=1080&crop=smart&auto=webp&s=c41d04678f23cda9ba0ba41b41fca0d058ccd92d"
   },
   {
     name: "Ice King",
